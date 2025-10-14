@@ -1,0 +1,70 @@
+.work-container {
+  background-color: #282828;
+  font-family: 'Courier New', monospace;
+
+  padding: 80px 20px 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.work-card {
+  aspect-ratio: 3/2;
+  border: 3px solid;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.work-card:hover {
+  transform: scale(1.05);
+}
+
+.code-card {
+  border-color: #B4F8C8;
+}
+
+.design-card {
+  border-color: #FFAEBC;
+}
+
+.card-text {
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.code-card .card-text {
+  color: #B4F8C8;
+}
+
+.design-card .card-text {
+  color: #FFAEBC;
+}
+
+@media (max-width: 768px) {
+  .work-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .card-text {
+    font-size: 36px;
+  }
+
+  .work-container {
+    padding: 80px 20px 40px;
+  }
+}

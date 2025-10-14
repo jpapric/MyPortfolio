@@ -1,0 +1,76 @@
+.contact-container {
+  background-color: #282828;
+  font-family: 'Courier New', monospace;
+  color: #B4F8C8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+}
+
+.contact-title {
+  font-size: 72px;
+  font-weight: bold;
+  margin-bottom: 60px;
+  color: #FFAEBC;
+  letter-spacing: 12px;
+  text-shadow: 4px 4px 0px #B4F8C8, 8px 8px 0px rgba(180, 248, 200, 0.5);
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.contact-info {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 20px 40px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-info:hover {
+  transform: scale(1.05);
+  background-color: rgba(180, 248, 200, 0.1);
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.email {
+  font-size: 36px;
+  color: #B4F8C8;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.phone {
+  font-size: 36px;
+  color: #B4F8C8;
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 48px;
+    margin-bottom: 40px;
+    letter-spacing: 6px;
+    text-shadow: 2px 2px 0px #B4F8C8, 4px 4px 0px rgba(180, 248, 200, 0.5);
+  }
+
+  .email,
+  .phone {
+    font-size: 24px;
+  }
+
+}

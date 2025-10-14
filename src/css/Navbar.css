@@ -1,0 +1,37 @@
+.navbar {
+  background-color: #282828;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 100px;
+}
+
+.nav-btn {
+  text-decoration: none;
+  border: 2px solid #B4F8C8;
+  border-radius: 25px;
+  padding: 10px 20px;
+  color: #FFAEBC;
+  font-weight: 500;
+  font-size: 18px;
+  transition: 0.3s;
+  height: 35px;
+  width: 100px;
+  text-align: center;
+  line-height: 35px;
+}
+
+.nav-btn:hover {
+  background-color: #B4F8C8;
+  color: #282828;
+}
+
+.active {
+  background-color: #B4F8C8;
+  color: #282828;
+  box-shadow: 0px 4px 4px rgba(180, 248, 200, 0.25);
+}
