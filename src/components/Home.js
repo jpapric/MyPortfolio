@@ -25,7 +25,7 @@ const Home = () => {
           className="hero-image"
         />
         <div className="hero-text">
-          <p className="intro">I'm Jovana Papric.</p>
+          <p className="intro">I'm Jovana.</p>
           <p className = "intro">
             I blend software engineering and design to turn complex ideas into
             simple, useful products.
