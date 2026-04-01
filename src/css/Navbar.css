@@ -30,7 +30,7 @@
   color: #282828;
 }
 
-.active {
+.nav-btn.active {
   background-color: #B4F8C8;
   color: #282828;
   box-shadow: 0px 4px 4px rgba(180, 248, 200, 0.25);

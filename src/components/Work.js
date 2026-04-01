@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../css/Work.css';
 
 const Work = () => {
@@ -7,15 +8,15 @@ const Work = () => {
     <>
       <div className="work-container">
         <div className="work-grid">
-          <div className="work-card code-card">
+          <Link className="work-card code-card" to="/code">
             <p className="card-text">
               &lt;/code&gt;
             </p>
-          </div>
+          </Link>
 
-          <div className="work-card design-card">
-            <p className="card-text">DESIGN</p>
-          </div>
+          <Link className="work-card design-card" to="/design">
+            <p className="card-text">&lt;/design&gt;</p>
+          </Link>
         </div>
       </div>
     </>

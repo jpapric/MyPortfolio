@@ -8,25 +8,35 @@ body{
 
 .home-container {
   text-align: center;
-  padding: 20px 20px;
+  padding: 70px 20px 90px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .hero-title {
   font-size: 60px;
   color: #FFAEBC;
-  margin-bottom: 50px;
+  margin: 0 0 20px;
+}
+
+.hero-tagline {
+  color: #f5f5f5;
+  font-size: 20px;
+  margin: 0 0 75px;
+  letter-spacing: 0.5px;
 }
 
 .hero-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 60px;
   flex-wrap: wrap;
+  margin-bottom: 70px;
 }
 
 .hero-image {
-  width: 200px;
+  width: 230px;
 }
 
 .hero-text {
@@ -35,12 +45,38 @@ body{
   padding-left: 20px;
   text-align: left;
   font-size: 20px;
+  line-height: 1.6;
 }
 
 .intro {
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-weight: 500;
+  margin-bottom: 14px;
   color: #B4F8C8;
+}
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.badge {
+  border: 1px solid #B4F8C8;
+  color: #B4F8C8;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.home-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .cv-btn {
@@ -52,7 +88,6 @@ body{
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
-  margin-top: 40px;
   display: inline-block;
   transition: 0.3s;
 }
@@ -61,6 +96,47 @@ body{
   background-color: #B4F8C8;
   color: #282828;
   transform: scale(1.05);
+}
+
+.ghost-btn {
+  border: 2px solid #B4F8C8;
+  color: #B4F8C8;
+  border-radius: 25px;
+  padding: 12px 28px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.ghost-btn:hover {
+  background-color: #B4F8C8;
+  color: #282828;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 44px;
+  }
+
+  .hero-tagline {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .hero-content {
+    gap: 30px;
+    margin-bottom: 36px;
+  }
+
+  .hero-text {
+    border-left: none;
+    border-top: 3px solid #FFAEBC;
+    padding-left: 0;
+    padding-top: 16px;
+    text-align: center;
+  }
 }
 
 
