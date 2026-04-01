@@ -70,7 +70,7 @@ export const designProjects = [
     title: "BeeSite",
     description: "Website design concept for BeeSite.",
     tags: ["Figma", "UI/UX", "Web"],
-    image: "",
+    image: "/projects/BeeSite.png",
     links: [
       {
         label: "Figma",
@@ -82,11 +82,11 @@ export const designProjects = [
     title: "BookStore",
     description: "Interactive bookstore prototype in Figma.",
     tags: ["Figma", "Prototype", "E-commerce"],
-    image: "",
+    image: "/projects/BookStore.png",
     links: [
       {
         label: "Figma",
-        url: "https://www.figma.com/proto/YLtkhWI09aLZ00FNvgZMR7/BookStore?node-id=13-64&starting-point-node-id=13%3A64"
+        url: "https://www.figma.com/design/YLtkhWI09aLZ00FNvgZMR7/BookStore?node-id=0-1&p=f&t=29kyQpP7KPGMIlHF-0"
       }
     ]
   },
@@ -94,7 +94,7 @@ export const designProjects = [
     title: "Music App",
     description: "UI concept for a music experience.",
     tags: ["Figma", "UI/UX", "Music"],
-    image: "",
+    image: "/projects/Music.png",
     links: [
       {
         label: "Figma",
@@ -106,7 +106,7 @@ export const designProjects = [
     title: "My Fitness Diary",
     description: "Final project design.",
     tags: ["Figma", "UI/UX", "Final Project"],
-    image: "",
+    image: "/projects/Zavrsni.png",
     links: [
       {
         label: "Figma",
@@ -118,7 +118,7 @@ export const designProjects = [
     title: "Message App",
     description: "Messaging app UI concept.",
     tags: ["Figma", "UI/UX", "Messaging"],
-    image: "",
+    image: "/projects/Message.png",
     links: [
       {
         label: "Figma",
@@ -130,7 +130,7 @@ export const designProjects = [
     title: "Coffee Shop Landing Page",
     description: "Coffee-themed UI concept.",
     tags: ["Figma", "UI/UX", "Branding"],
-    image: "",
+    image: "/projects/Coffee.png",
     links: [
       {
         label: "Figma",
@@ -142,7 +142,7 @@ export const designProjects = [
     title: "Pomodoro Timer App",
     description: "Pomodoro timer UI design.",
     tags: ["Figma", "UI/UX", "Productivity"],
-    image: "",
+    image: "/projects/Sprinta.png",
     links: [
       {
         label: "Figma",
