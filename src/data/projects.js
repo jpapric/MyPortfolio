@@ -66,27 +66,27 @@ export const codeProjects = [
 ];
 
 export const designProjects = [
+    {
+    title: "Social App",
+    description: "Social app UI concept.",
+    tags: ["Figma", "UI/UX", "Social"],
+    image: "/projects/Social app.png",
+    links: [
+      {
+        label: "Figma",
+        url: "https://www.figma.com/design/qwukCmAPCbnpFHMtb2FT1P/Social-App?node-id=0-1&p=f&t=HcWHdXaAYGgsBYek-0"
+      }
+    ]
+  },
   {
     title: "BeeSite",
     description: "Website design concept for BeeSite.",
-    tags: ["Figma", "UI/UX", "Web"],
+    tags: ["Figma", "UI/UX", "Bees"],
     image: "/projects/BeeSite.png",
     links: [
       {
         label: "Figma",
         url: "https://www.figma.com/design/3Z6UWkY8jJ6azc0QET0c51/BeeSite?t=6fmiUpVW6BYntWqV-0"
-      }
-    ]
-  },
-  {
-    title: "BookStore",
-    description: "Interactive bookstore prototype in Figma.",
-    tags: ["Figma", "Prototype", "E-commerce"],
-    image: "/projects/BookStore.png",
-    links: [
-      {
-        label: "Figma",
-        url: "https://www.figma.com/design/YLtkhWI09aLZ00FNvgZMR7/BookStore?node-id=0-1&p=f&t=29kyQpP7KPGMIlHF-0"
       }
     ]
   },
@@ -103,9 +103,21 @@ export const designProjects = [
     ]
   },
   {
+    title: "Bookstore",
+    description: "Interactive bookstore prototype in Figma.",
+    tags: ["Figma", "Prototype", "Books"],
+    image: "/projects/BookStore.png",
+    links: [
+      {
+        label: "Figma",
+        url: "https://www.figma.com/design/YLtkhWI09aLZ00FNvgZMR7/BookStore?node-id=0-1&p=f&t=29kyQpP7KPGMIlHF-0"
+      }
+    ]
+  },
+  {
     title: "My Fitness Diary",
     description: "Final project design.",
-    tags: ["Figma", "UI/UX", "Final Project"],
+    tags: ["Figma", "UI/UX", "Final Project","Fitness"],
     image: "/projects/Zavrsni.png",
     links: [
       {
