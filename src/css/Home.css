@@ -8,21 +8,21 @@ body{
 
 .home-container {
   text-align: center;
-  padding: 70px 20px 90px;
+  padding: 45px 20px 55px;
   max-width: 1100px;
   margin: 0 auto;
 }
 
 .hero-title {
-  font-size: 60px;
+  font-size: 54px;
   color: #FFAEBC;
-  margin: 0 0 20px;
+  margin: 0 0 14px;
 }
 
 .hero-tagline {
   color: #f5f5f5;
-  font-size: 20px;
-  margin: 0 0 75px;
+  font-size: 18px;
+  margin: 0 0 40px;
   letter-spacing: 0.5px;
 }
 
@@ -30,13 +30,13 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 40px;
   flex-wrap: wrap;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 .hero-image {
-  width: 230px;
+  width: 200px;
 }
 
 .hero-text {
@@ -44,35 +44,35 @@ body{
   border-left: 3px solid #FFAEBC;
   padding-left: 20px;
   text-align: left;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.6;
 }
 
 .intro {
   font-weight: 500;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   color: #B4F8C8;
 }
 
 .hero-badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 16px;
+  gap: 8px;
+  margin-top: 10px;
 }
 
 .badge {
   border: 1px solid #B4F8C8;
   color: #B4F8C8;
-  font-size: 12px;
-  padding: 6px 10px;
+  font-size: 11px;
+  padding: 5px 9px;
   border-radius: 999px;
   letter-spacing: 0.6px;
   text-transform: uppercase;
 }
 
 .home-actions {
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   gap: 16px;
   justify-content: center;
@@ -117,17 +117,17 @@ body{
 
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 44px;
+    font-size: 40px;
   }
 
   .hero-tagline {
-    font-size: 18px;
-    margin-bottom: 40px;
+    font-size: 16px;
+    margin-bottom: 28px;
   }
 
   .hero-content {
-    gap: 30px;
-    margin-bottom: 36px;
+    gap: 24px;
+    margin-bottom: 26px;
   }
 
   .hero-text {
