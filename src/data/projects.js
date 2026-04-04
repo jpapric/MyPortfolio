@@ -20,25 +20,18 @@ export const codeProjects = [
     links: [{ label: "GitHub", url: "https://github.com/jpapric/QA-Project" }]
   },
   {
-    title: "MyFitnessDiary",
-    description: "Fitness diary app for tracking habits and workouts.",
+    title: "My Fitness Diary",
+    description: "Fitness app for tracking calories, habits and recipes.",
     tags: ["Fitness", "Tracking", "App"],
     image: "",
     links: [{ label: "GitHub", url: "https://github.com/jpapric/MyFitnessDiary" }]
   },
   {
     title: "SportzHunter",
-    description: "Sports-focused project for discovering and exploring content.",
+    description: "Group project for discovering and exploring sport tournaments and games.",
     tags: ["Sports", "Discovery", "Web"],
     image: "",
     links: [{ label: "GitHub", url: "https://github.com/jpapric/SportzHunter" }]
-  },
-  {
-    title: "Machine learning",
-    description: "Machine learning project (details available in the repository).",
-    tags: ["Machine learning", "Project"],
-    image: "",
-    links: [{ label: "GitHub", url: "https://github.com/jpapric/PSU" }]
   },
   {
     title: "Bank Account",
@@ -58,7 +51,7 @@ export const codeProjects = [
   },
   {
     title: "Human for Human",
-    description: "Human-to-human support and community oriented project.",
+    description: "Human to human web application for donations, support and community oriented project.",
     tags: ["Community", "Humanitarian", "Web"],
     image: "",
     links: [{ label: "GitLab", url: "https://gitlab.com/jpapric/humanforhuman" }]
