@@ -24,7 +24,7 @@ export const codeProjects = [
     description: "Fitness app for tracking calories, habits and recipes.",
     tags: ["Fitness", "Tracking", "App"],
     image: "",
-    links: [{ label: "GitHub", url: "https://github.com/jpapric/MyFitnessDiary" }]
+    links: [{ label: "GitHub", url: "https://github.com/jpapric/FitnessDiary" }]
   },
   {
     title: "SportzHunter",
