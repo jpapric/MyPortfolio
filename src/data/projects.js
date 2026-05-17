@@ -167,17 +167,5 @@ export const designProjects = [
         url: "https://www.figma.com/design/EEAOyRS8KGxKOJiFkwA6Vi/Coffee?t=27cqW7rxWJCDGUeS-0"
       }
     ]
-  },
-  {
-    title: "Pomodoro Timer App",
-    description: "Pomodoro timer UI design.",
-    tags: ["Figma", "UI/UX", "Productivity"],
-    image: "/projects/Sprinta.png",
-    links: [
-      {
-        label: "Figma",
-        url: "https://www.figma.com/design/4L7tVGuwo0INlEtFZy8DNA/PomodoroTimer?t=27cqW7rxWJCDGUeS-0"
-      }
-    ]
   }
 ];
