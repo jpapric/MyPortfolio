@@ -1,9 +1,22 @@
 export const codeProjects = [
+    {
+    title: "Video Store App",
+    description:
+      "Desktop video store management application built with WPF and .NET.",
+    tags: ["WPF", ".NET", "Video store"],
+    image: "",
+    links: [
+      {
+        label: "GitHub",
+        url: "https://github.com/jpapric/Internship2026/tree/Task/VideoStoreApp"
+      }
+    ]
+  },
   {
     title: "Mental Health Risk Prediction",
     description:
       "A project focused on predicting mental health risk using data-driven signals.",
-    tags: ["Prediction", "Mental Health", "Data"],
+    tags: ["Prediction", "Azure ML", "Data"],
     image: "",
     links: [
       {
@@ -21,22 +34,22 @@ export const codeProjects = [
   },
   {
     title: "My Fitness Diary",
-    description: "Fitness app for tracking calories, habits and recipes.",
-    tags: ["Fitness", "Tracking", "App"],
+    description: "Android fitness app for tracking calories, habits and recipes.",
+    tags: ["Fitness", "Kotlin", "App"],
     image: "",
     links: [{ label: "GitHub", url: "https://github.com/jpapric/FitnessDiary" }]
   },
   {
     title: "SportzHunter",
     description: "Group project for discovering and exploring sport tournaments and games.",
-    tags: ["Sports", "Discovery", "Web"],
+    tags: ["Sports", ".NET", "Web"],
     image: "",
     links: [{ label: "GitHub", url: "https://github.com/jpapric/SportzHunter" }]
   },
   {
     title: "Bank Account",
     description: "Bank account project covering account operations.",
-    tags: ["Banking", "Accounts", "Finance"],
+    tags: ["Banking", "Accounts", "C"],
     image: "",
     links: [{ label: "GitHub", url: "https://github.com/jpapric/Bank-account" }]
   },
@@ -52,13 +65,25 @@ export const codeProjects = [
   {
     title: "Human for Human",
     description: "Human to human web application for donations, support and community oriented project.",
-    tags: ["Community", "Humanitarian", "Web"],
+    tags: ["Community", "Node.js", "Web"],
     image: "",
     links: [{ label: "GitLab", url: "https://gitlab.com/jpapric/humanforhuman" }]
   }
 ];
 
 export const designProjects = [
+    {
+    title: "Spice Finder App",
+    description: "Spice finder app UI design.",
+    tags: ["Figma", "UI/UX", "Spice"],
+    image: "/projects/SpiceFinderApp.png",
+    links: [
+      {
+        label: "Figma",
+        url: "https://www.figma.com/design/TueLfkuqYQ4iWEGBb4tXka/Spice-Finder?node-id=0-1&p=f&t=XXc3AcPyZsHJhzjO-0"
+      }
+    ]
+  },
     {
     title: "Social App",
     description: "Social app UI concept.",
