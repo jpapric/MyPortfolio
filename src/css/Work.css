@@ -1,72 +1,93 @@
-.work-container {
-  background-color: #282828;
-  font-family: 'Courier New', monospace;
+.work {
+  padding: 64px 24px 40px;
+}
 
-  padding: 80px 20px 40px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+.page-header {
+  max-width: 640px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.page-title {
+  margin: 0 0 14px;
+  font-size: clamp(32px, 5vw, 46px);
+}
+
+.page-subtitle {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 18px;
 }
 
 .work-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  max-width: 1200px;
-  width: 100%;
+  gap: 24px;
 }
 
 .work-card {
-  aspect-ratio: 3/2;
-  border: 3px solid;
-  border-radius: 24px;
+  --card-accent: var(--accent);
   display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 40px 36px;
+  min-height: 280px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
   text-decoration: none;
-  color: inherit;
+  color: var(--text);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.work-card.design {
+  --card-accent: #d76d84;
 }
 
 .work-card:hover {
-  transform: scale(1.05);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--card-accent);
 }
 
-.code-card {
-  border-color: #B4F8C8;
+.work-card-tag {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--card-accent);
+  background: color-mix(in srgb, var(--card-accent) 12%, transparent);
+  padding: 5px 12px;
+  border-radius: 999px;
 }
 
-.design-card {
-  border-color: #FFAEBC;
+.work-card-title {
+  margin: 4px 0 0;
+  font-size: 40px;
+  color: var(--card-accent);
 }
 
-.card-text {
-  font-size: 48px;
-  font-weight: bold;
-  letter-spacing: 2px;
+.work-card-text {
   margin: 0;
+  color: var(--text-muted);
+  max-width: 340px;
 }
 
-.code-card .card-text {
-  color: #B4F8C8;
+.work-card-cta {
+  margin-top: auto;
+  font-weight: 600;
+  color: var(--card-accent);
 }
 
-.design-card .card-text {
-  color: #FFAEBC;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 720px) {
   .work-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
   }
 
-  .card-text {
-    font-size: 36px;
-  }
-
-  .work-container {
-    padding: 80px 20px 40px;
+  .work-card {
+    min-height: 220px;
+    padding: 32px 28px;
   }
 }

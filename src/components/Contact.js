@@ -3,6 +3,9 @@ import '../css/Contact.css';
 import mailIcon from '../images/mail-svgrepo-com.svg';
 import whatsappIcon from '../images/whatsapp-svgrepo-com.svg';
 
+const EMAIL = 'jovana.papric2@gmail.com';
+const PHONE = '+385 97 742 7265';
+
 const Contact = () => {
   const [copied, setCopied] = useState(null);
 
@@ -12,34 +15,43 @@ const Contact = () => {
     setTimeout(() => setCopied(null), 2000);
   };
 
-return (
-    <>
-      <div className="contact-container">
-        <h1 className="contact-title">CONTACT ME</h1>
+  return (
+    <div className="contact container">
+      <header className="page-header">
+        <h1 className="page-title">Let's work together</h1>
+        <p className="page-subtitle">
+          Have a project in mind or just want to say hi? Reach out!
+        </p>
+      </header>
 
-        <div className="contact-section">
-          <div
-            className="contact-info"
-            onClick={() => handleCopy('jovana.papric2@gmail.com', 'email')}
-          >
-            <img src={mailIcon} alt="mail" className="contact-icon" />
-            <p className="email">
-              {copied === 'email' ? 'Copied!' : 'jovana.papric2@gmail.com'}
-            </p>
-          </div>
+      <div className="contact-cards">
+        <button
+          type="button"
+          className="contact-card"
+          onClick={() => handleCopy(EMAIL, 'email')}
+        >
+          <img src={mailIcon} alt="" className="contact-icon" />
+          <span className="contact-label">Email</span>
+          <span className="contact-value">
+            {copied === 'email' ? 'Copied to clipboard!' : EMAIL}
+          </span>
+          <span className="contact-hint">Click to copy</span>
+        </button>
 
-          <div
-            className="contact-info"
-            onClick={() => handleCopy('+385 97 742 7265', 'phone')}
-          >
-            <img src={whatsappIcon} alt="whatsapp" className="contact-icon" />
-            <p className="phone">
-              {copied === 'phone' ? 'Copied!' : '+385 97 742 7265'}
-            </p>
-          </div>
-        </div>
+        <button
+          type="button"
+          className="contact-card"
+          onClick={() => handleCopy(PHONE, 'phone')}
+        >
+          <img src={whatsappIcon} alt="" className="contact-icon" />
+          <span className="contact-label">Phone / WhatsApp</span>
+          <span className="contact-value">
+            {copied === 'phone' ? 'Copied to clipboard!' : PHONE}
+          </span>
+          <span className="contact-hint">Click to copy</span>
+        </button>
       </div>
-    </>
+    </div>
   );
 };
 

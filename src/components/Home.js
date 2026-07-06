@@ -1,68 +1,61 @@
 import React from 'react';
-import { motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import mePicture from '../images/undraw_focused_m9bj.svg';
 import '../css/Home.css';
-import cv from '../images/PapricJovanaCV.pdf';
+import cv from '../images/CVPapric.pdf';
+
+const skills = [
+  'C', 'C#', 'JavaScript', 'React', 'HTML', 'CSS',
+  'SQL', 'Kotlin', 'UI/UX', 'Figma',
+];
 
 const Home = () => {
   return (
-    <>
-      <div className="home-container">
-      <motion.h1
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
-        className="hero-title"
-      >
-        Hello World!
-      </motion.h1>
-
-      <div className="hero-content">
-        <img
-          src={mePicture}
-          alt="Me"
-          className="hero-image"
-        />
-        <div className="hero-text">
-          <p className="intro">I'm Jovana.</p>
-          <p className = "intro">
+    <div className="home container">
+      <div className="hero">
+        <motion.div
+          className="hero-text"
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+        >
+          <p className="eyebrow">Software Engineer - Student</p>
+          <h1 className="hero-title">
+            Hi, I'm Jovana.
+          </h1>
+          <p className="hero-lead">
             I blend software engineering and design to turn complex ideas into
-            simple, useful products.
+            simple, useful products - curious, detail-oriented, and always
+            improving the craft.
           </p>
-          <p className="intro">
-            Curious, detail-oriented, and always improving the craft.
-          </p>
-          <div className="hero-badges">
-            <span className="badge">C</span>
-            <span className="badge">C#</span>
-            <span className="badge">JavaScript</span>
-            <span className="badge">HTML</span>
-            <span className="badge">CSS</span>
-            <span className="badge">React</span>
-            <span className="badge">SQL</span>
-            <span className="badge">Kotlin</span>
-            <span className="badge">UI/UX</span>
-            <span className="badge">Figma</span>
-          </div>
-        </div>
-      </div>
 
-      <motion.div
-        className="home-actions"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.8 }}
-      >
-        <a href={cv} download className="cv-btn">
-          Download CV
-        </a>
-        <Link to="/work" className="ghost-btn">
-          View Work
-        </Link>
-      </motion.div>
+          <div className="home-actions">
+            <a href={cv} download className="btn btn-primary">
+              Download CV
+            </a>
+            <Link to="/work" className="btn btn-ghost">
+              View Work
+            </Link>
+          </div>
+
+          <div className="skills">
+            {skills.map((skill) => (
+              <span className="skill" key={skill}>{skill}</span>
+            ))}
+          </div>
+        </motion.div>
+
+        <motion.div
+          className="hero-media"
+          initial={{ opacity: 0, scale: 0.96 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.15, ease: 'easeOut' }}
+        >
+          <img src={mePicture} alt="Illustration of a focused developer" />
+        </motion.div>
+      </div>
     </div>
-    </>
   );
 };
 
